@@ -1,5 +1,13 @@
+@media screen and (max-widht : 768px){
+    header nav{
+        display: none;
+    }
+}
+
 *{
     scroll-behavior: smooth;
+    box-sizing: border-box;
+    outline: 1px solid red;
 }
 ::-webkit-scrollbar{
     width: 8px;
@@ -8,14 +16,13 @@
 ::-webkit-scrollbar-thumb{
     background-color: brown;
 }
-body{
-    background-color: burlywood;
-}
+
 .navvv{
      display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
+    width: 100%;
     
     padding-top: 10px;
 }
@@ -43,10 +50,12 @@ body{
 }
 
 body{
-    
+    background-color: burlywood;
     margin: 0;
     padding: 0%;
     padding-top: 60px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 h3{
@@ -66,6 +75,8 @@ header nav{
     width: 100%;
     z-index: 5;
     top: 0%;
+    margin: 0;
+    padding: 0;
     
 }
 nav li a.contact{
@@ -74,9 +85,11 @@ nav li a.contact{
 }
 nav ul{
     display: flex;
-    gap: 30px;
+    gap: 15px;
     list-style: none;
     border: 8px;
+    padding: 0;
+    margin: 0;
 }
 nav ul li a{
     text-decoration: none;
@@ -110,9 +123,11 @@ section h2{
     text-align: center;
 }
 img{
-    width: 200px;
+    width: 100px;
     border-radius: 20px;
     padding-top: 20px;
+    height: auto;
+
 }
 .menu-item{
     display: flex;
